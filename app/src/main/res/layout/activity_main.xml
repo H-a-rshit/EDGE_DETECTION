@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/camera"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="UPLOAD FROM DEVICE"></Button>
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/url"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="UPLOAD FROM CAMERA"></Button>
+
+            <EditText
+                android:id="@+id/url"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/fromurl"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:hint="ENTER URL"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/fromurl"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/img"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="UPLOAD USING URL"></Button>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_above="@+id/realimg"
+                android:layout_marginStart="40dp" />
+
+            <ImageView
+                android:id="@+id/realimg"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
